@@ -23,16 +23,16 @@ LABEL DominoDocker.maintainer="thomas.hampel@de.ibm.com, daniel.nashed@nashcom.d
 # External arguments with a default value
 ARG LinuxYumUpdate=
 ARG DownloadFrom=
-ARG PROD_NAME=
-ARG PROD_VER=
-ARG PROD_FP=
+ARG PROD_NAME=domino
+ARG PROD_VER=10.0.1
+ARG PROD_FP=FP2
 ARG PROD_HF=
-ARG DominoResponseFile=
+ARG DominoResponseFile=domino10_response.dat
 ARG DominoMoveInstallData=
 ARG LocalInstallDir=/tmp/install
 ARG DominoUserID=
 ARG DOMINO_LANG=
-ARG DOCKER_TZ
+ARG DOCKER_TZ="Europe/London"
 
 USER root
 
